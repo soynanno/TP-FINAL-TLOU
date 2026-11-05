@@ -3,122 +3,155 @@ html{
     scroll-padding-top: 80px;
 }
 
+* {
 
-*{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-     font-family: "Instrument Serif", serif;
-    background-color: #b2ebf2;
+body {
+    background-color: #eef7ff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-nav{
+header {
     width: 100%;
-    background-color: #ff5722;
-    color: white;
-    position: fixed;
-}
-
-nav ul{
-    list-style: none;
-}
-
-nav li{
-    display: inline-block;
-}
-
-nav ul li a{
-    display: block;
+    padding: 2px;
+    background-color: #4d869c;
     color: #fff;
-    padding: 1.25rem 1.25rem;
+}
+
+nav {
+    background-color: #7ab2b2;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: #fff;
+    padding: 10px;
+
 }
 
-nav ul li:hover{
-    background-color:#dd2c00 ;
+nav ul li:hover {
+    background-color: #4d869c;
+    color: #fff;
 }
 
-nav ul li:first-child{
-    background-color:#dd2c00 ;
-}
-nav ul li:last-child{
-    float: right;
+main {
+    background-color: #cde8e5;
+    color: gray;
+    width: 80%;
+    margin: 25px auto;
 }
 
-section{
-    padding-top: 4.375rem;
-    width: 95%;
-    margin: auto;
+section {
     text-align: justify;
+    padding: 20px;
 }
 
-h2{
-    font-family: "Righteous", sans-serif;
-}
-
-p{
-    margin: 1rem 0;
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 150%;
 }
 
 footer{
     width: 100%;
-    height: 3.125rem;
-    background-color: #00bcd4;
-    color: white;
+    padding: 5px;
+    background-color: #cde8e5;
     text-align: center;
-    line-height: 3.125rem;
+}
+
+.subir{
+    width: 80px;
+    height: 45px;
+    background-color: #4d869c;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    z-index: 100;
+    transition: all 1s;
+
+}
+
+.subir p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    text-shadow: 1px 0 5px #000;
+
+}
+
+.subir:hover{
+    width: 90px;
+    background-color: #7ab2b2;
 }
 
 .hero{
     width: 100%;
-    height: 300px;
-    background-image: url(../assets/img/premium_photo-1780416233419-0becab38d383.avif);
-
+    height: 390px;
+    background-image: url(../assets/img/tlou.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
 }
 
-.icono{
-    position: relative;
-    top: 5px;
-}
-
-
-/* definimos la clase formulario que da formato a la seccion */
 .formulario{
     width: 60%;
     margin: 50px auto;
     padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: unset;
 }
 
 
 
 
-/* definimos el titulo dentro de la clase formulario */
 .formulario h2{
     margin-bottom: 20px;
 }
 
 
 
-/* definimos la etiqueta formulario */
 form{
     text-align: left;
+    font-family: cursive;
+    font-style: oblique;
+   
+   
 }
 
 
 
 
-/* definimos las etiquetas que forman parte del formulario */
 input, textarea, select{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0px;
-    border: 1px solid #ccc;
+    border: 1px solid #3770da;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #ffffff;
+    font-style: italic;
+    
+    
 }
 
 .guardar, .cancelar{
@@ -126,28 +159,48 @@ input, textarea, select{
     font-size: 16px;
     padding: 12px 20px;
     margin: 8px 0px;
-    border: none;
+    border: rgb(0, 0, 0);
     border-radius: 10px;
+   border-style: outset;
+   
+   
 }
 
 .guardar{
-background-color: #0a33ed;
+background-color: #2c95db;
 color: white;
+
+
 }
 
 .guardar:hover{
-    background-color:#0db9f779 ;
+    background-color:#00f7ff ;
+    
+    transition-duration: 1s;
 }
 
 .cancelar{
-    background-color: cornflowerblue;
+    background-color: rgb(2, 49, 136);
     color: white;
 }
 
 
 
-/* definimos la accion cuando se pasa el mouse sobre el boton cancelar */
 
 .cancelar:hover{
-    background-color: #0db9f779;
+    background-color: #00eeff;
+    transition-duration: 1s;
+}
+
+.icono{
+    width: 35px;
+    height: 25px;
+filter: invert(50);
+
+    
+}
+.icono:hover{
+    border-radius: 50px;
+    transition: all 1s;
+   box-shadow: 0 0 08px #ff0000;
 }
